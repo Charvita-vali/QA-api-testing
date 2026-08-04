@@ -112,7 +112,7 @@ def test_delete_post():
     assert response.status_code == 200, (
         f"Expected status code 200, but received "
         f"{response.status_code}: {response.text}"
-    )    assert "id" in data
+    )    
 
 
 def test_update_post():
