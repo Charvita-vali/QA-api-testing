@@ -1,3 +1,5 @@
+![API Tests](https://github.com/Charvita-vali/QA-api-testing/actions/workflows/tests.yml/badge.svg)
+
 # 🌐 QA API Testing — JSONPlaceholder
 
 A self-directed API testing project built to practice REST API testing using **Python**, **pytest**, and **requests**. This project validates CRUD operations against the JSONPlaceholder REST API and demonstrates API validation, response verification, reusable test design, and automated test execution following QA best practices.
