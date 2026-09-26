@@ -113,23 +113,3 @@ def test_delete_post():
         f"Expected status code 200, but received "
         f"{response.status_code}: {response.text}"
     )    
-
-
-def test_update_post():
-    payload = {
-        "id": 1,
-        "title": "Updated Title",
-        "body": "Updated body content.",
-        "userId": 1
-    }
-    response = requests.put(f"{BASE_URL}/posts/1", json=payload)
-
-    assert response.status_code == 200
-    data = response.json()
-    assert data["title"] == "Updated Title"
-
-
-def test_delete_post():
-    response = requests.delete(f"{BASE_URL}/posts/1")
-
-    assert response.status_code == 200
